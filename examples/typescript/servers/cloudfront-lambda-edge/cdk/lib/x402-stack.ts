@@ -29,7 +29,7 @@ export class X402Stack extends cdk.Stack {
       this,
       'OriginRequest',
       {
-        runtime: lambda.Runtime.NODEJS_20_X,
+        runtime: lambda.Runtime.NODEJS_22_X,
         handler: 'index.originRequestHandler',
         code: lambdaCode,
         timeout: cdk.Duration.seconds(30),
@@ -42,7 +42,7 @@ export class X402Stack extends cdk.Stack {
       this,
       'OriginResponse',
       {
-        runtime: lambda.Runtime.NODEJS_20_X,
+        runtime: lambda.Runtime.NODEJS_22_X,
         handler: 'index.originResponseHandler',
         code: lambdaCode,
         timeout: cdk.Duration.seconds(30),
